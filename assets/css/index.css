@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(/assets/img/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+header-menu-toggle {
+  cursor: pointer;
+  width: 10vw;
+}
+
+.header-menu-text {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 4rem;
+}
+
+.header-nav-icon,
+.header-menu-icon,
+#visual_menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  top: 2rem;
+  right: 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
+  transition: all 0.5s ease-in-out 0s;
+  padding: 4px;
+}
+
+.header-nav {
+  display: block;
+  position: fixed;
+  text-align: center;
+  top: -100%;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: #33c391;
+  z-index: 10000;
+  transition: 0.5s;
+}
+.visua_menu {
+  justify-content: center;
+}
+.header-nav-content {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: inherit;
+  margin: 2rem;
+}
+
+.show {
+  display: block;
+  position: fixed;
+  text-align: center;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: #33c391;
+  z-index: 10000;
+  transition: 0.5s;
+  transition: 0.5s;
+  top: 0;
+  border-color: 10px red;
+}
+.hidden_menu {
+  opacity: 0%;
+}
+
+.body-pd {
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+
+.header-nav-links {
+  margin-top: 5rem;
+  text-align: none;
+  list-style: none;
+  padding: 5px;
+  line-height: 60px;
+}
+
+#nav-link a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#nav-link a:hover {
+  background-color: white;
+  border-radius: 50px;
+  color: #33c391;
+}
+
+.header-nav-social i {
+  margin-left: 3rem;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-nav-social i:hover {
+  border: 3px solid white;
+  transform: scale(1.1);
+  color: white;
+}
+
+/* RESPONSIVE DESIGN  */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(/assets/img/background_scaled.jpg);
+    background-size: cover;
+    background-position: 715vh;
+  }
+
+  .header-menu-text {
+    font-size: 1.4rem;
+  }
+  .header-nav-social i {
+    font-size: 1.3rem;
+  }
+
+  #nav-link a {
+      font-size: 1rem;
+}
+.header-nav {
+    width: 65vw;
+    background-color: #33c391;
+  }
+
+  .show{
+    width: 65vw;
+    background-color: #33c391;
+  }
+ }
